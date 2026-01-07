@@ -1,0 +1,14 @@
+{
+  "Hero": {
+    "title": "Hi, I'm Telmen Burgedbaatar",
+    "description": "I have experience in IT and sales in Japan and Mongolia."
+  },
+  "Experience": {
+    "title": "Work Experience",
+    "exstaffing": "Staffing management web system sales",
+    "tikaa": "Construction order management system sales"
+  },
+  "Skills": {
+    "title": "Skills"
+  }
+}
