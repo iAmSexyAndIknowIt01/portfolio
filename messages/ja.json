@@ -10,5 +10,9 @@
   },
   "Skills": {
     "title": "スキル"
+  },
+  "Projects": {
+    "title": "プロジェクト"
   }
+  
 }
