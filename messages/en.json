@@ -12,6 +12,14 @@
     "title": "Skills"
   },
   "Projects": {
-    "title": "Projects"
+    "title": "Projects",
+    "exstaffing": {
+      "title": "Ex-Staffing",
+      "description": "A web system for staffing management. It allows users to manage job orders, candidates, and placements efficiently."
+    },
+    "tikaa": {
+      "title": "Tikaa",
+      "description": "A construction order management system that streamlines the process of managing construction projects, orders, and client communications."
+    }
   }
 }
