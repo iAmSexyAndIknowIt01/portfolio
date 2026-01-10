@@ -50,6 +50,19 @@
   },
   "Approach": {
     "title": "My Approach",
-    "description": "I focus on building practical systems that connect people, business, and technology — especially between Japan and Mongolia."
+    "description": "I focus on building practical systems that connect people, business, and technology — especially between Japan and Mongolia.",
+
+    "ideas": {
+      "title": "Problem-driven ideas",
+      "description": "I design solutions by deeply understanding real business and user problems."
+    },
+    "bridge": {
+      "title": "Cross-border mindset",
+      "description": "I bridge communication and systems between Japan and Mongolia."
+    },
+    "tech": {
+      "title": "Modern technology",
+      "description": "I build scalable, maintainable systems using modern web technologies."
+    }
   }
 }
