@@ -13,23 +13,14 @@ export default function Grid() {
   };
 
   const items = [
-    {
-      key: "collaboration",
-      col: "md:col-span-2",
-    },
-    {
-      key: "timezone",
-      col: "md:col-span-1",
-    },
+    { key: "collaboration", col: "md:col-span-2" },
+    { key: "timezone", col: "md:col-span-1" },
     {
       key: "techstack",
       col: "md:col-span-2",
       showStack: true,
     },
-    {
-      key: "passion",
-      col: "md:col-span-1",
-    },
+    { key: "passion", col: "md:col-span-1" },
     {
       key: "cta",
       col: "md:col-span-3",
@@ -70,10 +61,29 @@ export default function Grid() {
             {item.cta && (
               <button
                 onClick={copyEmail}
-                className="mt-6 inline-flex items-center gap-2 rounded-full border px-6 py-3 hover:bg-accent hover:text-white transition"
+                className="
+                  group mt-6 inline-flex items-center gap-2
+                  rounded-full p-0.5
+                  bg-linear-to-r from-purple-500 via-pink-500 to-indigo-500
+                  transition hover:scale-105
+                "
               >
-                <Mail size={18} />
-                {t("cta.button")}
+                <span
+                  className="
+                    inline-flex items-center gap-2
+                    rounded-full bg-background
+                    px-6 py-3 text-sm font-semibold
+                    text-foreground transition
+                    group-hover:bg-transparent
+                    group-hover:text-white
+                  "
+                >
+                  <Mail
+                    size={18}
+                    className="transition-transform group-hover:translate-x-0.5"
+                  />
+                  {t("cta.button")}
+                </span>
               </button>
             )}
           </motion.div>
