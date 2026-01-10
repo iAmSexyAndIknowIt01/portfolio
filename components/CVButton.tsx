@@ -1,22 +1,28 @@
 "use client";
 
-import { useLocale } from "next-intl";
-import { Download } from "lucide-react";
-
 export default function CVButton() {
-  const locale = useLocale();
-
-  const cvPath =
-    locale === "ja" ? "/cv/cv-ja.pdf" : "/cv/cv-en.pdf";
-
   return (
     <a
-      href={cvPath}
+      href="/cv-en.html"
       download
-      className="inline-flex items-center gap-2 rounded-full border px-6 py-3 hover:bg-accent hover:text-white transition"
+      className="
+        relative inline-flex items-center justify-center
+        rounded-full p-0.5
+        bg-linear-to-r from-purple-500 via-pink-500 to-indigo-500
+        hover:scale-105 transition
+      "
     >
-      <Download size={18} />
-      Download CV
+      <span
+        className="
+          rounded-full bg-background
+          px-6 py-3 text-sm font-semibold
+          text-foreground
+          hover:bg-transparent hover:text-white
+          transition
+        "
+      >
+        Download CV
+      </span>
     </a>
   );
 }
