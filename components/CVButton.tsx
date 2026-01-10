@@ -1,9 +1,18 @@
 "use client";
 
+import { useLocale } from "next-intl";
+
 export default function CVButton() {
+  const locale = useLocale();
+
+  const cvPath =
+    locale === "ja"
+      ? "/en/cv/cv-ja.pdf"
+      : "/en/cv/cv-en.pdf";
+
   return (
     <a
-      href="/cv-en.html"
+      href={cvPath}
       download
       className="
         relative inline-flex items-center justify-center
