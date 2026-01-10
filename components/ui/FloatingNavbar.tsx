@@ -11,20 +11,32 @@ type NavItem = {
 
 export function FloatingNav({ navItems }: { navItems: NavItem[] }) {
   return (
-    <nav className="fixed top-6 left-1/2 z-100 w-[90%] max-w-5xl -translate-x-1/2 rounded-full border bg-background shadow-lg">
-      <div className="flex items-center justify-between px-6 py-3">
+    <nav
+      className="
+        fixed top-6 left-1/2 z-100
+        h-16
+        w-[90%] max-w-5xl
+        -translate-x-1/2
+        rounded-full border
+        bg-background/80 backdrop-blur
+        shadow-lg
+      "
+    >
+      <div className="flex h-full items-center justify-between px-6">
+        {/* Navigation links */}
         <div className="flex gap-6">
           {navItems.map((item) => (
             <Link
               key={item.name}
               href={item.link}
-              className="text-sm font-medium hover:text-accent"
+              className="text-sm font-medium transition hover:text-accent"
             >
               {item.name}
             </Link>
           ))}
         </div>
 
+        {/* Right controls */}
         <div className="flex items-center gap-3">
           <LanguageSwitcher />
           <ThemeToggle />

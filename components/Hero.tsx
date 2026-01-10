@@ -4,12 +4,18 @@ import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import CVButton from "./CVButton";
 import GitHubButton from "./GitHubButton";
+import FloatingAvatar from "./FloatingAvatar";
 
 export default function Hero() {
   const t = useTranslations("Hero");
 
   return (
     <section className="min-h-[80vh] flex flex-col items-center justify-center text-center gap-8">
+       {/* Avatar */}
+      <section className="min-h-[30vh] flex flex-col items-center justify-center gap-10 text-center">
+        <FloatingAvatar />
+      </section>
+
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

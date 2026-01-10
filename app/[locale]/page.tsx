@@ -17,7 +17,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
 
-        <section id="home">
+        <section id="home" className="pt-30">
           <Hero />
         </section>
 
