@@ -21,5 +21,31 @@
       "title": "Tikaa",
       "description": "A construction order management system that streamlines the process of managing construction projects, orders, and client communications."
     }
+  },
+  "Grid": {
+    "items": {
+      "collaboration": {
+        "title": "Client Collaboration",
+        "description": "I prioritize client collaboration, fostering open communication."
+      },
+      "timezone": {
+        "title": "Time Zone Flexibility",
+        "description": "I'm very flexible with time zone communications."
+      },
+      "techstack": {
+        "title": "Tech Stack",
+        "description": "I constantly try to improve my tech stack.",
+        "stack": "React.js, Express, TypeScript, Vue.js, Nuxt.js, Next.js"
+      },
+      "passion": {
+        "title": "Tech Enthusiast",
+        "description": "Tech enthusiast with a passion for development."
+      },
+      "cta": {
+        "title": "Let's Build Together",
+        "description": "Do you want to start a project together?",
+        "button": "Copy Email"
+      }
+    }
   }
 }

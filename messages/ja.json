@@ -21,6 +21,32 @@
       "title": "Tikaa",
       "description": "建設プロジェクト、注文、クライアントとのコミュニケーションの管理プロセスを合理化する建設発注管理システム。"
     }
+  },
+  "Grid": {
+    "items": {
+      "collaboration": {
+        "title": "クライアントとの協業",
+        "description": "オープンなコミュニケーションを大切にし、クライアントとの協業を重視しています。"
+      },
+      "timezone": {
+        "title": "タイムゾーン対応",
+        "description": "異なるタイムゾーンでのコミュニケーションにも柔軟に対応できます。"
+      },
+      "techstack": {
+        "title": "技術スタック",
+        "description": "常に技術力の向上を心がけています。",
+        "stack": "React.js, Express, TypeScript, Vue.js, Nuxt.js, Next.js"
+      },
+      "passion": {
+        "title": "技術への情熱",
+        "description": "開発に情熱を持つテックエンスージアストです。"
+      },
+      "cta": {
+        "title": "一緒に作りましょう",
+        "description": "一緒にプロジェクトを始めませんか？",
+        "button": "メールをコピー"
+      }
+    }
   }
   
 }
