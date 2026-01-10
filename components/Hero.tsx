@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import CVButton from "./CVButton";
+import GitHubButton from "./GitHubButton";
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -30,8 +31,10 @@ export default function Hero() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
+        className="flex items-center justify-center gap-6 mt-4"
       >
         <CVButton />
+        <GitHubButton />
       </motion.div>
     </section>
   );
