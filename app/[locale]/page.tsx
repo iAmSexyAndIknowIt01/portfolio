@@ -27,8 +27,6 @@ export default function Home() {
           <Projects />
         </section>
 
-        <Clients />
-
         <section id="experience">
           <Experience />
         </section>

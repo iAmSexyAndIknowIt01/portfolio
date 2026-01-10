@@ -47,5 +47,9 @@
         "button": "Copy Email"
       }
     }
+  },
+  "Approach": {
+    "title": "My Approach",
+    "description": "I focus on building practical systems that connect people, business, and technology — especially between Japan and Mongolia."
   }
 }
