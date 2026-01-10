@@ -17,13 +17,13 @@ export default function Footer() {
 
       <div className="flex justify-center gap-6 text-sm">
         <a
-          href="mailto:your@email.com"
+          href="mailto:tekeb98@gmail.com"
           className="hover:text-accent transition"
         >
           Email
         </a>
         <a
-          href="https://github.com/yourgithub"
+          href="https://github.com/iAmSexyAndIknowIt01"
           target="_blank"
           className="hover:text-accent transition"
         >
