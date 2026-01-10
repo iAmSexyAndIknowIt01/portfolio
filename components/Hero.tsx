@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
+import CVButton from "@/components/CVButton"; // замыг өөрийн project-т тааруул
 
 export default function Hero() {
   const t = useTranslations("Hero");
@@ -24,6 +25,16 @@ export default function Hero() {
       >
         {t("description")}
       </motion.p>
+
+      {/* CV BUTTON */}
+      <motion.div
+        initial={{ opacity: 0, y: 10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+        className="mt-10"
+      >
+        <CVButton />
+      </motion.div>
     </section>
   );
 }
