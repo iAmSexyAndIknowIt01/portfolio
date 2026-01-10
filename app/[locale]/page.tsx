@@ -5,11 +5,11 @@ import { navItems } from "@/data";
 import Hero from "@/components/Hero";
 import Grid from "@/components/Grid";
 import Footer from "@/components/Footer";
-import Clients from "@/components/Clients";
 import Approach from "@/components/Approach";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -29,6 +29,10 @@ export default function Home() {
 
         <section id="experience">
           <Experience />
+        </section>
+
+        <section id="skills">
+          <Skills />
         </section>
 
         <Approach />

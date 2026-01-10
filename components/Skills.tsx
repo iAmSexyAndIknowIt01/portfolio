@@ -6,10 +6,13 @@ import { Code } from "lucide-react";
 const skills = [
   "Java",
   "Spring Boot",
+  "Struts",
   "Next.js",
   "React",
   "TypeScript",
   "PostgreSQL",
+  "Oracle DB",
+  "Supabase",
 ];
 
 export default function Skills() {
