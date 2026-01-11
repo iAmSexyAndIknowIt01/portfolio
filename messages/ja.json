@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "こんにちは、ブリゲドバートル・テルメンです",
-    "description": "日本とモンゴルでITと営業の経験があります。"
+    "description": "日本とモンゴルでウェブシステム運用の経験があります。"
   },
   "Experience": {
     "title": "職務経歴",
@@ -10,7 +10,29 @@
     "tikaa": "建設発注管理システムの営業"
   },
   "Skills": {
-    "title": "スキル"
+    "title": "スキル",
+    "level": "スキルレベル：ミドルソフトウェアエンジニア",
+    "tech": "技術スキル",
+    "soft": "ソフトスキル",
+    "techSkills": [
+      { "name": "Java", "level": 4 },
+      { "name": "Spring Boot", "level": 4 },
+      { "name": "Struts", "level": 4 },
+      { "name": "Next.js", "level": 4 },
+      { "name": "React", "level": 4 },
+      { "name": "TypeScript", "level": 4 },
+      { "name": "PostgreSQL", "level": 4 },
+      { "name": "Oracle DB", "level": 4 },
+      { "name": "Supabase", "level": 4 }
+    ],
+    "softSkills": [
+      { "name": "課題解決力", "level": 4 },
+      { "name": "チームワーク", "level": 4 },
+      { "name": "コミュニケーション能力（報連相）", "level": 4 },
+      { "name": "主体性", "level": 4 },
+      { "name": "時間管理能力", "level": 4 },
+      { "name": "柔軟性", "level": 4 }
+    ]
   },
   "Projects": {
     "title": "プロジェクト",

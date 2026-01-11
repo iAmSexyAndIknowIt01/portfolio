@@ -1,7 +1,7 @@
 {
   "Hero": {
     "title": "Hi, I'm Telmen Burgedbaatar",
-    "description": "I have experience in IT and sales in Japan and Mongolia."
+    "description": "I have experience in Web system operations in Japan and Mongolia."
   },
   "Experience": {
     "title": "Work Experience",
@@ -9,8 +9,30 @@
     "mstaffing": "Staffing management web system sales",
     "tikaa": "Construction order management system sales"
   },
-  "Skills": {
-    "title": "Skills"
+ "Skills": {
+    "title": "Skills",
+    "level": "Skill Level: Mid Software Engineer",
+    "tech": "Technical Skills",
+    "soft": "Soft Skills",
+    "techSkills": [
+      { "name": "Java", "level": 4 },
+      { "name": "Spring Boot", "level": 4 },
+      { "name": "Struts", "level": 4 },
+      { "name": "Next.js", "level": 4 },
+      { "name": "React", "level": 4 },
+      { "name": "TypeScript", "level": 4 },
+      { "name": "PostgreSQL", "level": 4 },
+      { "name": "Oracle DB", "level": 4 },
+      { "name": "Supabase", "level": 4 }
+    ],
+    "softSkills": [
+      { "name": "Problem Solving", "level": 4 },
+      { "name": "Team Collaboration", "level": 4 },
+      { "name": "Communication", "level": 4 },
+      { "name": "Ownership", "level": 4 },
+      { "name": "Time Management", "level": 4 },
+      { "name": "Adaptability", "level": 4 }
+    ]
   },
   "Projects": {
     "title": "Projects",

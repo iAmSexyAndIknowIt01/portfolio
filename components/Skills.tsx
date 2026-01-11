@@ -1,39 +1,96 @@
 "use client";
 
 import { useTranslations } from "next-intl";
-import { Code } from "lucide-react";
+import { Code, Users } from "lucide-react";
 
-const skills = [
-  "Java",
-  "Spring Boot",
-  "Struts",
-  "Next.js",
-  "React",
-  "TypeScript",
-  "PostgreSQL",
-  "Oracle DB",
-  "Supabase",
-];
+type Skill = {
+  name: string;
+  level: number; // 1 - 5
+};
+
+type SkillCardProps = {
+  title: string;
+  skills: Skill[];
+  icon: React.ElementType;
+};
+
+function SkillLevel({ level }: { level: number }) {
+  return (
+    <div className="flex items-center gap-2 mt-3">
+      {Array.from({ length: 5 }).map((_, i) => {
+        const active = i < level;
+
+        return (
+          <span
+            key={i}
+            title={`Level ${level} / 5`}
+            className={`
+              h-3.5 w-3.5 rounded-full transition
+              ${active ? "bg-blue-300" : "bg-gray-300"}
+            `}
+          />
+        );
+      })}
+
+      {/* Fallback text (Japan-friendly) */}
+      <span className="ml-2 text-xs text-muted-foreground">
+        Lv.{level}
+      </span>
+    </div>
+  );
+}
+
+function SkillCard({ title, skills, icon: Icon }: SkillCardProps) {
+  return (
+    <div>
+      <h3 className="text-xl font-semibold mb-6 flex items-center gap-2">
+        <Icon className="text-blue-500" />
+        {title}
+      </h3>
+
+      <div className="grid gap-6 sm:grid-cols-2">
+        {skills.map((skill) => (
+          <div
+            key={skill.name}
+            className="rounded-3xl border bg-background p-6 hover:shadow-xl transition"
+          >
+            <p className="font-medium">{skill.name}</p>
+            <SkillLevel level={skill.level} />
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function Skills() {
   const t = useTranslations("Skills");
 
+  const techSkills = t.raw("techSkills") as Skill[];
+  const softSkills = t.raw("softSkills") as Skill[];
+
   return (
-    <section className="py-28 bg-card/60 rounded-[3rem]">
-      <h2 className="text-3xl font-bold mb-12 text-center">
+    <section className="py-28 bg-card/60 rounded-[3rem] px-6">
+      <h2 className="text-3xl font-bold mb-4 text-center">
         {t("title")}
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 px-6">
-        {skills.map((skill) => (
-          <div
-            key={skill}
-            className="rounded-3xl border bg-background p-8 hover:shadow-xl transition"
-          >
-            <Code className="mb-4 text-accent" />
-            <h3 className="font-semibold text-lg">{skill}</h3>
-          </div>
-        ))}
+      <p className="text-center text-muted-foreground mb-16">
+        {t("level")}
+      </p>
+
+      <div className="grid gap-20 md:grid-cols-2">
+        <SkillCard
+          title={t("tech")}
+          skills={techSkills}
+          icon={Code}
+        />
+
+        <SkillCard
+          title={t("soft")}
+          skills={softSkills}
+          icon={Users}
+        />
       </div>
     </section>
   );
