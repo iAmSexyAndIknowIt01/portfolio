@@ -15,23 +15,103 @@
     "tech": "技術スキル",
     "soft": "ソフトスキル",
     "techSkills": [
-      { "name": "Java", "level": 4 },
-      { "name": "Spring Boot", "level": 4 },
-      { "name": "Struts", "level": 4 },
-      { "name": "Next.js", "level": 4 },
-      { "name": "React", "level": 4 },
-      { "name": "TypeScript", "level": 4 },
-      { "name": "PostgreSQL", "level": 4 },
-      { "name": "Oracle DB", "level": 4 },
-      { "name": "Supabase", "level": 4 }
+      {
+        "name": "Java",
+        "level": 4,
+        "description": "業務用Webシステムのバックエンド開発に使用し、API実装や保守対応を経験。"
+      },
+      {
+        "name": "Spring Boot",
+        "level": 4,
+        "description": "Spring Bootを用いたREST APIおよび業務ロジックの実装経験あり。"
+      },
+      {
+        "name": "Struts",
+        "level": 4,
+        "description": "Strutsベースの既存業務システムの保守・機能追加を担当。"
+      },
+      {
+        "name": "Next.js",
+        "level": 4,
+        "description": "App RouterやSSR、国際化対応を含むWebアプリケーションを開発。"
+      },
+      {
+        "name": "React",
+        "level": 4,
+        "description": "再利用可能なUIコンポーネントの設計・実装を経験。"
+      },
+      {
+        "name": "TypeScript",
+        "level": 4,
+        "description": "型安全性を意識した開発により、保守性と品質の向上を実現。"
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 4,
+        "description": "SQL設計およびパフォーマンスを考慮したクエリ作成の経験。"
+      },
+      {
+        "name": "Oracle DB",
+        "level": 4,
+        "description": "業務システムにおけるデータ管理および基本的なチューニングを経験。"
+      },
+      {
+        "name": "Supabase",
+        "level": 4,
+        "description": "認証・データベース・API連携を用いたWebアプリ開発に利用。"
+      }
     ],
     "softSkills": [
-      { "name": "課題解決力", "level": 4 },
-      { "name": "チームワーク", "level": 4 },
-      { "name": "コミュニケーション能力（報連相）", "level": 4 },
-      { "name": "主体性", "level": 4 },
-      { "name": "時間管理能力", "level": 4 },
-      { "name": "柔軟性", "level": 4 }
+      {
+        "name": "課題解決力",
+        "level": 5,
+        "description": "課題を整理し、現実的かつ実行可能な解決策を提案できます。"
+      },
+      {
+        "name": "チームワーク",
+        "level": 5,
+        "description": "日本・モンゴルのメンバーと連携し、円滑なチーム開発を経験。"
+      },
+      {
+        "name": "コミュニケーション能力（報連相）",
+        "level": 4,
+        "description": "進捗・課題を適切に共有し、関係者と円滑に連携できます。"
+      },
+      {
+        "name": "主体性",
+        "level": 4,
+        "description": "指示待ちではなく、自ら考えて行動することを意識しています。"
+      },
+      {
+        "name": "時間管理能力",
+        "level": 5,
+        "description": "タスクの優先順位を管理し、納期を意識した行動が可能です。"
+      },
+      {
+        "name": "柔軟性",
+        "level": 4,
+        "description": "仕様変更や新しい技術にも柔軟に対応できます。"
+      },
+      {
+        "name": "日本語能力（JLPT N2）",
+        "level": 4,
+        "description": "業務上の会話や技術的なコミュニケーションが可能です。"
+      },
+      {
+        "name": "モンゴル語能力（ネイティブ）",
+        "level": 4,
+        "description": "ネイティブレベルでの正確なコミュニケーションが可能です。"
+      },
+      {
+        "name": "英語能力（中級）",
+        "level": 4,
+        "description": "技術ドキュメントの読解や基本的な業務コミュニケーションが可能です。"
+      },
+      {
+        "name": "Java能力認定試験（２級）",
+        "level": 4,
+        "description": "Javaの基礎およびオブジェクト指向に関する知識を有しています。"
+      }
     ]
   },
   "Projects": {

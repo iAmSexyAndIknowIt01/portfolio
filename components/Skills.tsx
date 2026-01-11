@@ -6,6 +6,7 @@ import { Code, Users } from "lucide-react";
 type Skill = {
   name: string;
   level: number; // 1 - 5
+  description?: string; // hover дээр харагдана
 };
 
 type SkillCardProps = {
@@ -14,6 +15,7 @@ type SkillCardProps = {
   icon: React.ElementType;
 };
 
+/* ---------- Skill Level (dots + fallback) ---------- */
 function SkillLevel({ level }: { level: number }) {
   return (
     <div className="flex items-center gap-2 mt-3">
@@ -32,7 +34,7 @@ function SkillLevel({ level }: { level: number }) {
         );
       })}
 
-      {/* Fallback text (Japan-friendly) */}
+      {/* Fallback text */}
       <span className="ml-2 text-xs text-muted-foreground">
         Lv.{level}
       </span>
@@ -40,6 +42,27 @@ function SkillLevel({ level }: { level: number }) {
   );
 }
 
+/* ---------- Tooltip ---------- */
+function Tooltip({ text }: { text: string }) {
+  return (
+    <div
+      className="
+        absolute z-10 bottom-full mb-3
+        w-max max-w-xs px-3 py-2
+        text-xs text-white bg-black/80
+        rounded-lg shadow-lg
+        opacity-0 scale-95
+        transition-all duration-200
+        group-hover:opacity-100 group-hover:scale-100
+        pointer-events-none
+      "
+    >
+      {text}
+    </div>
+  );
+}
+
+/* ---------- Skill Card ---------- */
 function SkillCard({ title, skills, icon: Icon }: SkillCardProps) {
   return (
     <div>
@@ -52,8 +75,17 @@ function SkillCard({ title, skills, icon: Icon }: SkillCardProps) {
         {skills.map((skill) => (
           <div
             key={skill.name}
-            className="rounded-3xl border bg-background p-6 hover:shadow-xl transition"
+            className="
+              relative group
+              rounded-3xl border bg-background p-6
+              hover:shadow-xl transition
+            "
           >
+            {/* Tooltip (hover) */}
+            {skill.description && (
+              <Tooltip text={skill.description} />
+            )}
+
             <p className="font-medium">{skill.name}</p>
             <SkillLevel level={skill.level} />
           </div>
@@ -63,6 +95,7 @@ function SkillCard({ title, skills, icon: Icon }: SkillCardProps) {
   );
 }
 
+/* ---------- Main ---------- */
 export default function Skills() {
   const t = useTranslations("Skills");
 

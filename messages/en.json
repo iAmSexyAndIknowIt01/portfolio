@@ -15,23 +15,103 @@
     "tech": "Technical Skills",
     "soft": "Soft Skills",
     "techSkills": [
-      { "name": "Java", "level": 4 },
-      { "name": "Spring Boot", "level": 4 },
-      { "name": "Struts", "level": 4 },
-      { "name": "Next.js", "level": 4 },
-      { "name": "React", "level": 4 },
-      { "name": "TypeScript", "level": 4 },
-      { "name": "PostgreSQL", "level": 4 },
-      { "name": "Oracle DB", "level": 4 },
-      { "name": "Supabase", "level": 4 }
+      {
+        "name": "Java",
+        "level": 4,
+        "description": "Used for backend development in business web systems, including API implementation and maintenance."
+      },
+      {
+        "name": "Spring Boot",
+        "level": 4,
+        "description": "Developed REST APIs and business logic using Spring Boot in production environments."
+      },
+      {
+        "name": "Struts",
+        "level": 4,
+        "description": "Maintained and extended legacy enterprise systems based on Struts framework."
+      },
+      {
+        "name": "Next.js",
+        "level": 4,
+        "description": "Built modern web applications using App Router, SSR, and internationalization."
+      },
+      {
+        "name": "React",
+        "level": 4,
+        "description": "Developed reusable UI components and managed application state effectively."
+      },
+      {
+        "name": "TypeScript",
+        "level": 4,
+        "description": "Used TypeScript to improve code quality, readability, and type safety."
+      },
+      {
+        "name": "PostgreSQL",
+        "level": 4,
+        "description": "Designed and optimized SQL queries and database schemas for web systems."
+      },
+      {
+        "name": "Oracle DB",
+        "level": 4,
+        "description": "Worked with Oracle DB in enterprise systems, including data management and performance tuning."
+      },
+      {
+        "name": "Supabase",
+        "level": 4,
+        "description": "Used Supabase for authentication, database, and API integration in modern web apps."
+      }
     ],
     "softSkills": [
-      { "name": "Problem Solving", "level": 4 },
-      { "name": "Team Collaboration", "level": 4 },
-      { "name": "Communication", "level": 4 },
-      { "name": "Ownership", "level": 4 },
-      { "name": "Time Management", "level": 4 },
-      { "name": "Adaptability", "level": 4 }
+      {
+        "name": "Problem Solving",
+        "level": 5,
+        "description": "Able to analyze problems logically and propose practical solutions."
+      },
+      {
+        "name": "Team Collaboration",
+        "level": 4,
+        "description": "Worked closely with team members in Japan and Mongolia to deliver projects smoothly."
+      },
+      {
+        "name": "Communication",
+        "level": 4,
+        "description": "Communicate clearly with engineers and non-technical stakeholders."
+      },
+      {
+        "name": "Ownership",
+        "level": 4,
+        "description": "Take responsibility for assigned tasks and follow through until completion."
+      },
+      {
+        "name": "Time Management",
+        "level": 5,
+        "description": "Manage tasks efficiently and meet deadlines consistently."
+      },
+      {
+        "name": "Adaptability",
+        "level": 4,
+        "description": "Adapt quickly to new technologies, tools, and changing requirements."
+      },
+      {
+        "name": "Japanese (JLPT N2)",
+        "level": 4,
+        "description": "Able to communicate in Japanese in business and technical contexts."
+      },
+      {
+        "name": "Mongolian (Native)",
+        "level": 5,
+        "description": "Native-level communication skills."
+      },
+      {
+        "name": "English (Intermediate)",
+        "level": 3,
+        "description": "Able to read technical documents and communicate in daily work situations."
+      },
+      {
+        "name": "Java Proficiency Certification Exam (Level 2)",
+        "level": 4,
+        "description": "Certified knowledge of Java fundamentals and object-oriented programming."
+      }
     ]
   },
   "Projects": {
